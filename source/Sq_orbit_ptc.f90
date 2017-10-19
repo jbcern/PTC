@@ -1567,7 +1567,7 @@ close(mf)
     WRITE(6,*) "ETAPS ", ETAP
     DO K=1,my_ORBIT_LATTICE%ORBIT_N_NODE
        CALL ORBIT_TRACK_NODE(K,Y,STATE)
-       CALL ORBIT_TRACK_NODE(K,CLOSED,STATE)
+       !CALL ORBIT_TRACK_NODE(K,CLOSED,STATE)
        BET(1)=(Y(1).SUB.'1')**2+(Y(1).SUB.'01')**2
        BET(2)=(Y(3).SUB.'001')**2+(Y(3).SUB.'0001')**2
        ALF(1)=-((Y(1).SUB.'1')*(Y(2).SUB.'1')+(Y(1).SUB.'01')*(Y(2).SUB.'01'))
